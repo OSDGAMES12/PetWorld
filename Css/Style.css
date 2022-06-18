@@ -1,0 +1,521 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+/*Codigo del menu de navegacion*/
+
+.cabecera{
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%; /*La cabecera ocupara el 100% del ancho de la pantalla */
+    height: 75px;
+    top: 0;
+    left: 0;
+    position: relative;
+}
+
+.header{
+    background: rgb(16, 117, 124);
+    *background: rgb(40,83,80);
+    width: 100%;
+    height: 100%;
+    padding: 0px 40px;
+}
+
+.navegador{
+    height: 100%;
+    width: 100%;
+}
+
+.navegador .grupo-1{ 
+    height: 100%;
+    width: 71%;
+}
+
+.navegador .grupo-2{ 
+    height: 100%;
+    width: 28%;
+    padding: 0px 70px;
+}
+
+nav{
+    height: 100%;
+}
+
+.navegador nav ul li a{
+    height: 100%;
+    width: 100%;
+    color: #fff;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 10px;
+    text-transform: uppercase;
+    font-size: 13px;
+    transition: all 600ms ease;
+}
+
+.navegador nav ul  li:hover a{
+    transition: all 300ms ease;
+    transform: scale(1.06);
+    background-color: green;
+    cursor: pointer;
+}
+
+.navegador nav .grupo-2  li:hover a{
+    transition: all 300ms ease;
+    transform: scale(1.06);
+    background-color: rgb(211, 44, 44);
+    cursor: pointer;
+}
+
+.navegador .grupo-2 li a label:hover{
+    cursor: pointer;
+}
+
+.navegador .grupo-2 li a img{
+    width:50px;
+    height:50px;
+}
+
+
+.navegador .grupo-2 li a p{
+    padding: 5px;
+    font-weight: bolder;
+}
+
+
+.navegador nav ul  li{
+    list-style: none;
+    height: 100%;
+}
+
+.navegador nav ul{
+    display: inline-flex;
+    height: 100%;
+}
+
+.navegador .grupo-2 li a label{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.navegador .grupo-2 li a{
+    width: 100%;
+    height: 100%;
+}
+
+
+.navegador .grupo-2{
+    position: absolute;
+    padding: 0px 10px; 
+}
+
+.navegador .grupo-2 li{
+    width: 180px;
+}
+
+.grupo-1 li a, .grupo-2 li a{
+    text-align: center;
+}
+
+/*Codigo del footer*/
+
+footer{
+    background: rgb(16, 117, 124);
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    color: #fff;
+}
+
+/*Grupo 1*/
+
+.FootCon .grupo1{
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    padding: 10px 20px;
+    position: relative;
+}
+
+.FootCon .grupo2{
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+    display: flex;
+    padding: 20px 0px;
+}
+
+.FootCon .grupo2 .derechos{
+    width: 100%;
+    text-align: center;
+}
+
+.col1{
+    width: 50%;
+    padding: 40px;
+}
+
+.columnas2y3{
+    display: flex;
+    width: 50%;
+    padding: 40px;
+}
+
+.columnas2y3 div a{
+    display: flex;
+    align-items: center;
+    width: 200px;
+}
+
+.col2{
+    width: 50%;
+}
+
+.col3{
+    width: 50%;
+}
+
+.FootCon h1{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.col2 a label{
+    margin-left: 5px;
+}
+
+.col3 a label{
+    margin-left: 5px;
+}
+
+.red1{
+    margin-bottom: 10px;
+}
+
+.red2{
+    margin-bottom: 10px;
+}
+
+.red3{
+    margin-bottom: 10px;
+}
+
+.Direccion{
+    margin-bottom: 10px;
+}
+
+.Telefono{
+    margin-bottom: 10px;
+}
+
+.Correo{
+    margin-bottom: 10px;
+}
+
+.FootCon a{
+    cursor: pointer;
+    color: #fff;
+    display: flex;
+}
+
+.FootCon a:hover{
+    color: rgb(0, 0, 0);
+}
+
+.FootCon{
+    padding: 0px 0px 0px 0px;
+}
+
+/*Menu responsivo*/
+
+.menu_barras img{
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+}
+
+.menu_barras{
+    position: absolute;
+    top: 20px;
+    left: 40px;
+    visibility: hidden;
+}
+
+#barras{
+    position: absolute;
+    top: 100px;
+    visibility: hidden;
+}
+
+
+
+@media screen and (max-width:840px){
+
+    .menu_barras{
+        transition: all 300ms;
+        visibility: visible;
+    }
+
+    .Fondo .ContenidoCortina .imagen img{
+        width: 400px;
+        height: 400px;
+    }
+
+    body .cabecera{
+        opacity: 100%;
+    }
+
+    #barras:checked ~ .cabecera .header .navegador nav{
+        visibility: visible;
+        transform: translateY(0px);
+        transition: all 800ms;
+    }
+
+    #barras:checked ~ .cabecera .header .navegador nav ul li a{
+        visibility: visible;
+        transform: translateX(0%);
+        transition: all 0.6s;
+    }
+
+    .menu_barras{
+        left: 20px;
+    }
+
+    .navegador nav ul{
+        flex-direction: column;
+        background: rgb(16, 117, 124);
+    }
+
+    .navegador nav{
+        transition: all 800ms;
+        transform: translateY(-700px);
+        visibility: hidden;
+        display: flex;
+        top: 75px;
+        position: absolute;
+        height: 400px;
+        width: 100%;
+        left: 0px;
+    }
+
+    .navegador nav .grupo-1{
+        width: 100%;
+        height: 300px;
+        padding: 0px;
+    }
+
+    .navegador nav .grupo-1 li, .navegador nav .grupo-2 li{
+        height: 60px;
+    }
+
+    .navegador nav .grupo-1 li a, .navegador nav .grupo-2 li a{
+        font-size: 15px;
+        font-weight: bolder;
+        transform: translateX(100%);
+        transition: all 200ms;
+        visibility: hidden;
+    }
+    
+    #CerrarSesion{
+        background: #000;
+    }
+
+    .navegador nav ul li a:hover{
+        transform: scale(1);
+    }
+
+    .navegador nav .grupo-2{
+        padding: 0px;
+        top: 300px;
+        width: 100%;    
+        height: 120px;
+        display: flex;
+    }
+    
+    
+    
+    .navegador nav .grupo-2 li{
+        width: 100%;
+    }
+
+     /*Footer responsivo*/
+
+     footer .FootCon .grupo1 {
+        display: flex;
+        flex-direction: column; /*Encimamos todos los elementos, los colocamos en columnas*/
+    }
+    
+    /*COLUMNA 1 RESPONSIVA*/
+
+    .grupo1 .col1{
+        width: 100%; /*La columna ocupa el 100% de espacio*/
+        text-align: center; /*Centramos el texto*/
+    }
+    /*Cambiamos el tamaño del texto*/
+    .grupo1 .col1 h1{ 
+        font-size: 28px;
+    }
+
+    .grupo1 .col1 p{
+        font-size: 15px;
+    }
+
+    /*COLUMNA 2 y 3 RESPONSIVA*/
+
+    .columnas2y3{
+        width: 100%;
+    }
+
+    .columnas2y3 h1{
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .grupo1 .col2{
+        padding: 0px 20px;
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .grupo1 .col2 div, .grupo1 .col3 div{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 35px;
+        width: 180px;
+        margin-top: 2px;
+        margin-bottom: 2px;
+    }
+
+    .grupo1 .col2 div a, .grupo1 .col3 div a{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+    }
+
+    .grupo1 .col3{
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0px 20px;
+    }
+
+    /*GRUPO 2 RESPONSIVO*/
+
+    .grupo2{
+        margin: 0px;
+    }
+
+    .grupo2 .derechos small{
+        font-size: 15px;
+    }
+
+}
+
+@media screen and (max-width:470px){
+    .grupo1 .columnas2y3{
+        flex-direction: column;
+        margin: 0px;
+        padding: 10px 0px;
+    }
+
+    .grupo1 .col2, .grupo1 .col3{
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    
+    .Fondo .ContenidoCortina .imagen img{
+        width: 320px;
+        height: 320px;
+    }
+
+}
+
+@media screen and (min-width: 1600px){
+
+	/*HEADER RESPONSIVE*/   
+
+	.cabecera{
+	height: 120px;
+	}
+
+	.navegador nav ul #ColumnaD{
+	width:300px;
+	}
+
+	.navegador nav ul li{
+	width:150px;
+	}
+
+	.navegador nav ul li a{
+	font-size: 18.5px;
+	font-weight: bolder;
+	}
+
+	.Fondo .ContenidoCortina .imagen img{
+	width: 700px;
+	height: 700px;
+	}
+
+	.Fondo .ContenidoCortina .texto h1{
+	font-size: 45px;
+	}
+
+	/*HEADER RESPONSIVE*/ 
+
+	.FootCon{
+	width: 100%;
+	}
+
+	.FootCon .grupo1{
+	max-width: 100%;
+	width: 100%;
+	}
+
+	.FootCon .grupo1 .col1, .FootCon .grupo1 .columnas2y3{
+	width: 100%;
+	}
+
+	.FootCon .grupo1 .col1 h1{
+	font-size: 30px;
+	}
+
+	.FootCon .grupo1 .col1 p{
+	font-size: 25px;
+	}
+
+	.FootCon .grupo1 .columnas2y3 h1{
+	font-size: 30px;
+	}
+
+	.FootCon .grupo1 .columnas2y3 div a{
+	font-size: 25px;
+	width: 270px;	
+	}
+
+	.FootCon .grupo1 .columnas2y3 div a img{
+	width:40px;
+	height: 40px;
+	margin-right: 5px;
+	}
+
+	.FootCon .grupo2 div small{
+	font-size: 18.5px;
+	}
+
+
+}

@@ -1,0 +1,345 @@
+/*Codigo para el registro de un usuario*/
+
+.NuevoRegistro{
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    position: fixed;
+    align-items: center;
+    justify-content: center;
+    transition: all 400ms ease;
+    background: gold;
+}
+
+.Registro .cortina{
+    background: #000;
+    opacity: 10%;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.modalReg .modal_contenidoReg{
+    position: relative;
+    padding: 5px;
+}
+
+.Registro{
+    position: fixed;
+    width: 100%;
+    height: 85%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.Registro video{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.NuevoRegistro .modalReg{
+    transform: translateX(-250px);
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    width: 650px;
+    background-color: #fff;
+    border-radius: 10%;
+    overflow: hidden;
+    border: 4px solid #000;
+    transform: translateX(-700%);
+    visibility: hidden;
+    transition: 2s;
+}
+
+.NuevoRegistro .modalReg .modal_headReg{
+    display: flex;
+    width: 100%;
+    height: 10%;
+    position: relative;
+    background-color: rgb(233, 182, 42);
+    align-items: center;
+}
+
+.modal_headReg label{
+    cursor: pointer;
+    font-weight: bolder;
+    margin-left: 89%;
+    font-size: 25px;
+    color: #000;
+}
+
+.modal_headReg label:hover{
+    transform: scale(1.5);
+}
+
+.modal_contenidoReg{
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.modal_contenidoReg form{
+    padding: 5px;
+}
+
+.modal_contenidoReg form p{
+    font-size: 15px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.modal_contenidoReg form label{
+    font-size: 17px;
+    font-weight: bolder;
+}
+
+.modal_contenidoReg .modal_g1Reg form #Nombre, #Correo,#Contraseña1,#Contraseña2, #Ocupacion, #Edad, #Telefono1, #Telefono2{
+    text-align: center;
+    height: 40px;
+    font-size: 14px;
+    border-radius: 30px;
+    margin-bottom: 5px;
+}
+
+#Correo{
+    width: 320px;
+}
+
+#Nombre{
+    width: 325px;
+}
+
+#Contraseña1,#Contraseña2{
+    width: 180px;
+    margin: 0px 2.5px;
+}
+
+#Ocupacion{
+    width: 165px;
+    margin-right: 10px;
+}
+
+#Edad{
+    padding: 0px 20px;
+    width: 180px;
+}
+
+#Telefono1, #Telefono2{
+    width: 165px;
+}
+
+.modalReg .modal_contenidoReg h2{
+    font-size: 20px;
+    text-align: center;
+    margin: 5px 20px;
+}
+
+.modalReg .modal_contenidoReg h1{
+    text-transform: uppercase;
+    text-align: center; 
+    color: rgb(233, 182, 42);
+    font-size: 30px;
+    margin: 5px 20px;
+}
+
+.modal_contenidoReg .modal_g1Reg form p{
+    font-size: 18px;
+}
+
+.modal_contenidoReg .modal_g1Reg{
+    width: 100%;
+    height: 100%;
+    padding: 10px 20px;
+}
+
+.Nombre, .Correo , .Telefonos, .OyE{
+    display: flex;
+    transform: translate(20px);
+    align-items: center;
+}
+
+.Nombre label, .Correo label, .Telefonos label, .OyE label{
+    margin-right: 5px;
+}
+
+.Telefonos input{
+    margin: 0px 2.5px;
+}
+
+.enlace1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*Contraseñas codigo*/
+.Contraseñas{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    margin: 0px 0px 5px;
+    transform: translate(20px);
+}
+
+.Contraseñas label{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Contraseñas img{
+    width: 40px;
+    height: 40px;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+
+
+/*Botones codigo*/
+
+.botones1{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    margin-top: 5px;
+}
+
+.botones1 input{
+    height: 85%;
+    width: 140px;
+    margin: 0px 10px;
+    background-color: #000;
+    color: #fff;
+    font-size: 15px;
+    padding: 5px;
+    border: 2px #000 solid;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: 300ms;
+}
+
+.botones1 input:hover{
+    background-color: rgb(233, 182, 42);
+    border: 2px rgb(233, 182, 42) solid;
+    color: #000;
+    font-weight: bolder;
+    transition: 300ms;
+}
+
+
+/*Codigo de las opciones del menu*/
+
+.Opciones{
+    position: absolute;
+    background-color: rgba(0, 0, 0, 50%);
+    border-radius: 30px;
+    width: 800px;
+    height: 500px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 5px #fff solid;
+    transition: 0.7s ease;
+}
+
+.Opciones .titulo{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    padding: 10px 0px;
+    transition: 300ms ease;
+}
+
+.titulo h1{
+    font-size: 30px;
+    margin: 10px 0px;
+}
+
+.titulo h5{
+    margin: 0px;
+    font-size: 20px;
+}
+
+.eleccion{
+    margin: auto;
+    width: 90%;
+    height: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.In , .Reg{
+    width: 300px;
+    height: 300px;
+    margin: 0px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    border: 5px #fff solid;
+    cursor: pointer;
+    transition: 300ms ease;
+    font-size: 15px;
+}
+
+.In:hover , .Reg:hover{
+    
+    border: 5px rgb(255, 217, 0) solid;
+    border-radius: 200px;
+    transition: 300ms ease;
+    
+}
+
+.In:hover h1 , .Reg:hover h1{
+    font-size: 20px;
+    color: rgb(255, 217, 0);
+    transition: 300ms ease;
+}
+
+.In:hover img , .Reg:hover img{
+    border: 5px rgb(255, 217, 0) solid;
+    border-radius: 200px;
+    transform: scale(1.2);
+    margin-bottom: 20px;
+    transition: 300ms ease;
+}
+
+.In img , .Reg img{
+    border-radius: 200px;
+    transition: 300ms ease;
+}
+
+#CajaReg{
+    left: 0;
+    top: 0;
+    position: absolute;
+}
+
+#CajaReg:checked ~ .NuevoRegistro .Opciones{
+    transform: translate(500%);
+    transition: 2s ease;
+}
+
+#CajaReg:checked ~ .NuevoRegistro .modalReg{
+    transition: 0.5s;
+    transform: translateX(-250px);
+    visibility: visible;
+}
